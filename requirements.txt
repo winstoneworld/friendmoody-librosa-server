@@ -1,0 +1,28 @@
+# friendmoody Librosa Audio Analysis Server
+# Python 3.10+ 권장
+
+# Web framework
+flask==3.0.3
+
+# WSGI server (Railway 프로덕션용)
+gunicorn==22.0.0
+
+# Audio analysis
+librosa==0.10.2
+numpy==1.26.4
+scipy==1.13.1
+soundfile==0.12.1
+audioread==3.0.1
+
+# HTTP client (오디오 URL 다운로드)
+requests==2.32.3
+
+# librosa 의존성 (명시적 고정)
+numba==0.59.1
+llvmlite==0.42.0
+joblib==1.4.2
+scikit-learn==1.5.0
+decorator==5.1.1
+lazy-loader==0.4
+msgpack==1.0.8
+pooch==1.8.2
