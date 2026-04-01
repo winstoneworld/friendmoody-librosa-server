@@ -144,7 +144,7 @@ def score_track(features: dict, mood: str) -> dict:
     s7 = dur_s + 5.0 * max(0.0, 1.0 - sp * 2.0)
     scores["structure"]  = round(s7, 1); details["structure"] = f"{s7:.1f}/10"
     total  = sum(scores.values())
-    passed = (total >= 70.0) and (features["bpm_stability"] >= 15.0)
+    passed = (total >= 70.0) and (features["bpm_stability"] >= 13.0)
     return {"mood": mood, "total_score": round(total, 1), "scores": scores, "details": details, "passed": passed}
 
 @app.route("/health", methods=["GET"])
