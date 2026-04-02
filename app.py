@@ -20,25 +20,25 @@ app = Flask(__name__)
 
 MOOD_SPECS = {
     "CALM": {
-        "tempo_range":        (62,  84),
-        "energy_avg":          0.13,
-        "energy_tolerance":    0.05,
-        "acousticness_range": (0.80, 0.97),
-        "brightness_target":   2000,
+        "tempo_range":        (72,  99),
+        "energy_avg":          0.15,
+        "energy_tolerance":    0.10,
+        "acousticness_range": (0.65, 0.97),
+        "brightness_target":   1800,
     },
     "MELO": {
-        "tempo_range":        (72,  96),
-        "energy_avg":          0.32,
-        "energy_tolerance":    0.10,
-        "acousticness_range": (0.55, 0.82),
-        "brightness_target":   3000,
+        "tempo_range":        (88, 118),
+        "energy_avg":          0.30,
+        "energy_tolerance":    0.15,
+        "acousticness_range": (0.45, 0.82),
+        "brightness_target":   2500,
     },
     "ANXI": {
-        "tempo_range":        (82, 108),
-        "energy_avg":          0.52,
+        "tempo_range":        (94, 114),
+        "energy_avg":          0.50,
         "energy_tolerance":    0.15,
         "acousticness_range": (0.20, 0.55),
-        "brightness_target":   4000,
+        "brightness_target":   3500,
     },
 }
 
